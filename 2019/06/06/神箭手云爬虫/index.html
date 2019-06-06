@@ -104,7 +104,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -124,16 +124,16 @@
   <meta name="description" content="分为：  入口页，帮助页，内容页 入口页： scanUrl     爬虫网页的入口 帮助页：helperurl  一帮包含大量的内容页（列表），多数情况下事业个内容列表，也叫列表页 内容页:  contentUrl 承载了我们关心的数据，只在这种网页上做数据抽取，对于需要的部分数据显示在列表上，通过urlContent来解决 待爬队列scanUrl队列： 存放入口类型的Url，configs.sc">
 <meta name="keywords" content="java Python AI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="神箭手云爬虫">
 <meta property="og:url" content="http://yoursite.com/2019/06/06/神箭手云爬虫/index.html">
 <meta property="og:site_name" content="小鑫">
 <meta property="og:description" content="分为：  入口页，帮助页，内容页 入口页： scanUrl     爬虫网页的入口 帮助页：helperurl  一帮包含大量的内容页（列表），多数情况下事业个内容列表，也叫列表页 内容页:  contentUrl 承载了我们关心的数据，只在这种网页上做数据抽取，对于需要的部分数据显示在列表上，通过urlContent来解决 待爬队列scanUrl队列： 存放入口类型的Url，configs.sc">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://s2.ax1x.com/2019/06/06/VaMoIU.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/06/06/VawCHe.png">
-<meta property="og:updated_time" content="2019-06-06T05:57:09.611Z">
+<meta property="og:updated_time" content="2019-06-06T09:15:48.112Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
+<meta name="twitter:title" content="神箭手云爬虫">
 <meta name="twitter:description" content="分为：  入口页，帮助页，内容页 入口页： scanUrl     爬虫网页的入口 帮助页：helperurl  一帮包含大量的内容页（列表），多数情况下事业个内容列表，也叫列表页 内容页:  contentUrl 承载了我们关心的数据，只在这种网页上做数据抽取，对于需要的部分数据显示在列表上，通过urlContent来解决 待爬队列scanUrl队列： 存放入口类型的Url，configs.sc">
 <meta name="twitter:image" content="https://s2.ax1x.com/2019/06/06/VaMoIU.png">
 
@@ -154,7 +154,7 @@
   };
 </script>
 
-  <title>Hello World | 小鑫</title>
+  <title>神箭手云爬虫 | 小鑫</title>
   
 
 
@@ -488,7 +488,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">神箭手云爬虫
 
               
             
@@ -514,7 +514,7 @@
                 
               
 
-              <time title="创建于：2019-06-06 12:04:18 / 更新于：13:57:09" itemprop="dateCreated datePublished" datetime="2019-06-06T12:04:18+08:00">2019-06-06</time>
+              <time title="创建于：2019-06-06 12:04:18 / 更新于：17:15:48" itemprop="dateCreated datePublished" datetime="2019-06-06T12:04:18+08:00">2019-06-06</time>
             
 
             
@@ -525,28 +525,33 @@
           </span>
 
           
-
-          
+            <span class="post-category">
             
+              <span class="post-meta-divider">|</span>
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Kommentare：</span>
-                <a href="/2019/06/06/神箭手云爬虫/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/06/神箭手云爬虫/" itemprop="commentCount"></span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/神箭手/" itemprop="url" rel="index"><span itemprop="name">神箭手</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
             
           
 
           
           
-            <span id="/2019/06/06/神箭手云爬虫/" class="leancloud_visitors" data-flag-title="Hello World">
+            <span id="/2019/06/06/神箭手云爬虫/" class="leancloud_visitors" data-flag-title="神箭手云爬虫">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -597,19 +602,20 @@
 <p>在链接调度过程中，如果遇到了处理失败的情况： 首先会触发链接的重试（此链接会被重新加载到队列中），当重试次数（入口页：5次；帮助页：3次；内容页2次）仍然失败时，此链接就会被放到失败链接，当其他所有队列都为空时，失败队列里面的链接再重试一次，这些链接重试完成后，爬虫结束。</p>
 <h2 id="链接去重"><a href="#链接去重" class="headerlink" title="链接去重"></a><strong>链接去重</strong></h2><p>网站之中链接存在循环，爬虫在爬去的过程中，如果不做控制，很容易陷入死循环。</p>
 <p>比较好的方式就是对已经处理过的链接做标记，进行去重处理，（因为大部分处理过的链接不需要再处理一次，另一方面避免爬虫进入死循环）</p>
-<p>对于GET类型的请求：平台使用链接本身去重，但是!!!!平台不会对#做处理，<br><a href="http://www.baidu.com/和" target="_blank" rel="noopener">www.baidu.com/和</a> <a href="http://www.baidu.com/#是两个不同的链接" target="_blank" rel="noopener">www.baidu.com/#是两个不同的链接</a></p>
+<p>对于GET类型的请求：平台使用链接本身去重，但是!!!!平台不会对#做处理，</p>
+<a id="more"></a>
+<p><a href="http://www.baidu.com/和" target="_blank" rel="noopener">www.baidu.com/和</a> <a href="http://www.baidu.com/#是两个不同的链接" target="_blank" rel="noopener">www.baidu.com/#是两个不同的链接</a></p>
 <p>对于POST请求，使用链接+参数的方式去重，也就是说对于同一链接，如果post的参数不一样，平台会认为是两个不同的链接<br>==HTTP的header不会作为去重的依据==</p>
 <h2 id="爬虫的生命周期"><a href="#爬虫的生命周期" class="headerlink" title="爬虫的生命周期"></a>爬虫的生命周期</h2><p><img src="https://s2.ax1x.com/2019/06/06/VaMoIU.png" alt="爬虫生命周期"></p>
 <h2 id="链接生命周期"><a href="#链接生命周期" class="headerlink" title="链接生命周期"></a>链接生命周期</h2><p><img src="https://s2.ax1x.com/2019/06/06/VawCHe.png" alt="爬虫生命周期"></p>
 <p>configs对象<br>  configs属性：<br>domains    String 数组   不可为空<br>    定义爬虫爬去哪些域名下的网页，链接发现的时候会检查链接的域名，如果不是这些域名下的链接，则会被忽略。<br>       scanUrl     String 数组<br>   爬虫入口的链接，这是给爬虫添加入口的简单方式，这种方式添加的都是GET方式的请求。<br> 不设置此属性，在initCrawl回调函数中调用site.addScanUrl，也可以达到添加入口页链接的目的。<br>以下情况只能在initCrawl回调函数中调用site.addScanUrl才能实现：<br>1.如果需要添加POST请求的入口页链接，只能通过site.addScanUrl来添加。<br>2.scanUrls数组长度的限制是1000个，超过1000个的部分将会被忽略；这种情况需要把添加入口链接的工作放到initCrawl回调函数中来做。<br>         contentUrlRegexes  String 数组或正则数组<br>      定义内容页的链接正则，爬虫会根据这些正则来判断一个链接是否是内容页链接。<br>可以使字符串形式的正则，也可以是javaScript的正则，</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//写法一：js原生正则（建议使用这种写法）</span><br><span class="line">[/http:\/\/club2011\.auto\.163\.com\/post\/\d+\.html.*/]</span><br><span class="line">//写法二：正则的字符串形式</span><br><span class="line">[&quot;http://club2011\\.auto\\.163\\.com/post/\\d+\\.html.*&quot;]</span><br><span class="line">//写法三：通过字符串形式new一个js正则对象</span><br><span class="line">[new RegExp(&quot;http://club2011\\.auto\\.163\\.com/post/\\d+\\.html.*&quot;)]</span><br></pre></td></tr></table></figure>
 
-<p>1.正则可以写多个，一个链接只要能匹配到其中的任意一个正则，该链接就会被认为是内容链接<br>2.不设置或设置为空数组，则所有的链接都是内容页链接。<br>helperUrlRegexes String数组或正则数组<br>    定义帮助页的链接正则，爬虫会根据这些正则来判断一个链接是否是帮助页链接。<br>属性同内容页正则属性相同；<br>fields filed对象或数组 不可为空<br>定义爬取结构的数据字段，一个field定义出一个字段。  </p>
+<p>1.正则可以写多个，一个链接只要能匹配到其中的任意一个正则，该链接就会被认为是内容链接<br>2.不设置或设置为空数组，则所有的链接都是内容页链接。<br>helperUrlRegexes String数组或正则数组<br>    定义帮助页的链接正则，爬虫会根据这些正则来判断一个链接是否是帮助页链接。<br>属性同内容页正则属性相同；<br>fields filed对象或数组 不可为空<br>定义爬取结构的数据字段，一个field定义出一个字段。</p>
 <h2 id="interval-整数"><a href="#interval-整数" class="headerlink" title="interval  整数"></a>interval  整数</h2><p>两个链接之间的处理间隔，单位是毫秒，默认值是1000，既1秒。可设置的最小值是1000.<br> 一般保持默认值即可，如果反扒严重，可适当加大此值。</p>
 <h2 id="timeout-整数"><a href="#timeout-整数" class="headerlink" title="timeout 整数"></a>timeout 整数</h2><pre><code>每个请求的默认超时时间。单位是毫秒，默认值是5000，即5秒。</code></pre><p>   一般保持默认值即可，如果目标网站比较卡，经常超时，可以适当加大此值，如果设置过小，会导致所有的请求都超时。<br>注意：！1.这是全局超时时间，对于没有特殊指定超时时间的请求，超时时间都是这个值。<br>2.对于开启自动Js渲染的页面，在渲染过程中会自动发出很多其他js，css等的请求，这些请求的超时时间都是这个值（（既这个值代表了超时的所有的时长  ））</p>
 <h2 id="enableJS-布尔类型"><a href="#enableJS-布尔类型" class="headerlink" title="enableJS 布尔类型"></a>enableJS 布尔类型</h2><pre><code>是否默认开启自动Js渲染。默认值是false。</code></pre><p>这是一个全局设置，在处理具体的请求时，如果该请求有设置options.enableJS，则此值被覆盖。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var configs = &#123;</span><br><span class="line">  enableJS: false</span><br><span class="line">&#125;;</span><br><span class="line">configs.initCrawl = function(site) &#123;</span><br><span class="line">  site.addUrl(&quot;http://www.baidu.com&quot;);//该请求不会自动JS渲染</span><br><span class="line">  site.addUrl(&quot;http://tieba.baidu.com&quot;, &#123;</span><br><span class="line">    enableJS: true</span><br><span class="line">  &#125;);//该请求将会自动JS渲染</span><br><span class="line"></span><br><span class="line">  site.requestUrl(&quot;http://music.baidu.com&quot;);//该请求不会自动JS渲染</span><br><span class="line">  site.requestUrl(&quot;http://index.baidu.com&quot;, &#123;</span><br><span class="line">    enableJS: true</span><br><span class="line">  &#125;);//该请求将会自动JS渲染</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var configs = &#123;</span><br><span class="line">  enableJS: true</span><br><span class="line">&#125;;</span><br><span class="line">configs.initCrawl = function(site) &#123;</span><br><span class="line">  site.addUrl(&quot;http://www.baidu.com&quot;, &#123;</span><br><span class="line">    enableJS: false</span><br><span class="line">  &#125;);//该请求不会自动JS渲染</span><br><span class="line">  site.addUrl(&quot;http://tieba.baidu.com&quot;);//该请求将会自动JS渲染</span><br><span class="line"></span><br><span class="line">  site.requestUrl(&quot;http://music.baidu.com&quot;, &#123;</span><br><span class="line">    enableJS: false</span><br><span class="line">  &#125;);//该请求不会自动JS渲染</span><br><span class="line">  site.requestUrl(&quot;http://index.baidu.com&quot;);//该请求将会自动JS渲染</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
@@ -651,6 +657,35 @@
       
     
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById(&quot;QR&quot;); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="小鑫 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="小鑫 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
@@ -661,22 +696,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/06/04/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -697,6 +716,7 @@
 
   
     <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NDYwMy8yMTEzMg=="></div>
     </div>
 
   
@@ -748,12 +768,29 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -782,7 +819,7 @@
                   
                     
                   
-                  <a href="https://github.com/zhuangg" title="GitHub &rarr; https://github.com/zhuangg" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/XiaoXin" title="GitHub &rarr; https://github.com/XiaoXin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -793,73 +830,7 @@
                   
                     
                   
-                  <a href="/guozhuangr@qq.com" title="E-Mail &rarr; guozhuangr@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://weibo.com" title="Weibo &rarr; https://weibo.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://www.google.com" title="Google &rarr; https://www.google.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://twitter.com" title="Twitter &rarr; https://twitter.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://www.facebook.com" title="facebook &rarr; https://www.facebook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i>facebook</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://youtube.com" title="YouTube &rarr; https://youtube.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://www.lingoi.cn" title="lingoi.cn &rarr; https://www.lingoi.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i>lingoi.cn</a>
+                  <a href="http://1655568635@qq.com" title="E-Mail &rarr; http://1655568635@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                 </span>
               
             </div>
@@ -910,7 +881,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -930,7 +901,7 @@
   <div class="powered-by"></div>
   <span class="post-count">全站共字</span>
 </div>
-<!-- 
+<!--
 
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
@@ -940,7 +911,7 @@
   <span class="post-meta-divider">|</span>
 
 
-<!-- 
+<!--
 
   <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.0.1</div>
 
@@ -1034,6 +1005,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -1052,6 +1026,12 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/three/three.min.js"></script>
+
+  
+  <script src="/lib/three/three-waves.min.js"></script>
 
 
   
@@ -1093,37 +1073,22 @@
   
 
   
+
+
   
-
-<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
-
-
-
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-
-<script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: true,
-    appId: 'w7TNr86fKlw9nHyazYFbFeYi-gzGzoHsz',
-    appKey: 'G6nl8Dc5r2WbyFwWBDGp4rcC',
-    placeholder: 'come..',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true,
-    lang: 'zh-cn' || 'zh-cn'
-  });
+    <script>
+  window.livereOptions = {
+    refer: '2019/06/06/神箭手云爬虫/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
 </script>
-
-
-
 
   
 
@@ -1454,6 +1419,66 @@
 
 
   
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! More info at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + '')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': '',
+                'X-LC-Key': '',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            addCount(Counter);
+          
+        });
+    });
+  </script>
+
+
 
   
 
