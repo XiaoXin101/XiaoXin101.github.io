@@ -129,10 +129,13 @@
 <meta property="og:site_name" content="小鑫">
 <meta property="og:description" content="分为：  入口页，帮助页，内容页 入口页： scanUrl     爬虫网页的入口 帮助页：helperurl  一帮包含大量的内容页（列表），多数情况下事业个内容列表，也叫列表页 内容页:  contentUrl 承载了我们关心的数据，只在这种网页上做数据抽取，对于需要的部分数据显示在列表上，通过urlContent来解决 待爬队列scanUrl队列： 存放入口类型的Url，configs.sc">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-06T03:09:35.232Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/06/06/VaMoIU.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/06/06/VawCHe.png">
+<meta property="og:updated_time" content="2019-06-06T05:47:10.930Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小鑫">
 <meta name="twitter:description" content="分为：  入口页，帮助页，内容页 入口页： scanUrl     爬虫网页的入口 帮助页：helperurl  一帮包含大量的内容页（列表），多数情况下事业个内容列表，也叫列表页 内容页:  contentUrl 承载了我们关心的数据，只在这种网页上做数据抽取，对于需要的部分数据显示在列表上，通过urlContent来解决 待爬队列scanUrl队列： 存放入口类型的Url，configs.sc">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/06/06/VaMoIU.png">
 
 
 
@@ -231,7 +234,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -511,7 +514,7 @@
                 
               
 
-              <time title="创建于：2019-06-06 11:49:22 / 更新于：11:09:35" itemprop="dateCreated datePublished" datetime="2019-06-06T11:49:22+08:00">2019-06-06</time>
+              <time title="创建于：2019-06-06 12:04:18 / 更新于：13:47:10" itemprop="dateCreated datePublished" datetime="2019-06-06T12:04:18+08:00">2019-06-06</time>
             
 
             
@@ -533,7 +536,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-                <span class="post-meta-item-text">Kommentare：</span>
+                <span class="post-meta-item-text">Comments：</span>
                 <a href="/2019/06/06/神箭手云爬虫/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count valine-comment-count" data-xid="/2019/06/06/神箭手云爬虫/" itemprop="commentCount"></span>
                 </a>
@@ -549,7 +552,7 @@
                 <i class="fa fa-eye"></i>
               </span>
               
-                <span class="post-meta-item-text">Aufrufe：</span>
+                <span class="post-meta-item-text">Views：</span>
               
                 <span class="leancloud-visitors-count"></span>
             </span>
@@ -559,7 +562,7 @@
             <span class="post-meta-divider">|</span>
             <span class="post-meta-item-icon">
             <i class="fa fa-eye"></i>
-             Aufrufe： 
+             Views： 
             <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
             </span>
           
@@ -596,8 +599,9 @@
 <p>比较好的方式就是对已经处理过的链接做标记，进行去重处理，（因为大部分处理过的链接不需要再处理一次，另一方面避免爬虫进入死循环）</p>
 <p>对于GET类型的请求：平台使用链接本身去重，但是!!!!平台不会对#做处理，<br><a href="http://www.baidu.com/和" target="_blank" rel="noopener">www.baidu.com/和</a> <a href="http://www.baidu.com/#是两个不同的链接" target="_blank" rel="noopener">www.baidu.com/#是两个不同的链接</a></p>
 <p>对于POST请求，使用链接+参数的方式去重，也就是说对于同一链接，如果post的参数不一样，平台会认为是两个不同的链接<br>==HTTP的header不会作为去重的依据==</p>
-<h2 id="爬虫的生命周期"><a href="#爬虫的生命周期" class="headerlink" title="爬虫的生命周期"></a>爬虫的生命周期</h2><p>![爬虫生命周期](<a href="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/" target="_blank" rel="noopener">https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/</a><br>u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg “爬虫生命周期”)</p>
-<h2 id="链接生命周期"><a href="#链接生命周期" class="headerlink" title="链接生命周期"></a>链接生命周期</h2><p>configs对象<br>  configs属性：<br>domains    String 数组   不可为空<br>    定义爬虫爬去哪些域名下的网页，链接发现的时候会检查链接的域名，如果不是这些域名下的链接，则会被忽略。<br>       scanUrl     String 数组<br>   爬虫入口的链接，这是给爬虫添加入口的简单方式，这种方式添加的都是GET方式的请求。<br> 不设置此属性，在initCrawl回调函数中调用site.addScanUrl，也可以达到添加入口页链接的目的。<br>以下情况只能在initCrawl回调函数中调用site.addScanUrl才能实现：<br>1.如果需要添加POST请求的入口页链接，只能通过site.addScanUrl来添加。<br>2.scanUrls数组长度的限制是1000个，超过1000个的部分将会被忽略；这种情况需要把添加入口链接的工作放到initCrawl回调函数中来做。<br>         contentUrlRegexes  String 数组或正则数组<br>      定义内容页的链接正则，爬虫会根据这些正则来判断一个链接是否是内容页链接。<br>可以使字符串形式的正则，也可以是javaScript的正则，</p>
+<h2 id="爬虫的生命周期"><a href="#爬虫的生命周期" class="headerlink" title="爬虫的生命周期"></a>爬虫的生命周期</h2><p><img src="https://s2.ax1x.com/2019/06/06/VaMoIU.png" alt="爬虫生命周期"></p>
+<h2 id="链接生命周期"><a href="#链接生命周期" class="headerlink" title="链接生命周期"></a>链接生命周期</h2><p><img src="https://s2.ax1x.com/2019/06/06/VawCHe.png" alt="爬虫生命周期"></p>
+<p>configs对象<br>  configs属性：<br>domains    String 数组   不可为空<br>    定义爬虫爬去哪些域名下的网页，链接发现的时候会检查链接的域名，如果不是这些域名下的链接，则会被忽略。<br>       scanUrl     String 数组<br>   爬虫入口的链接，这是给爬虫添加入口的简单方式，这种方式添加的都是GET方式的请求。<br> 不设置此属性，在initCrawl回调函数中调用site.addScanUrl，也可以达到添加入口页链接的目的。<br>以下情况只能在initCrawl回调函数中调用site.addScanUrl才能实现：<br>1.如果需要添加POST请求的入口页链接，只能通过site.addScanUrl来添加。<br>2.scanUrls数组长度的限制是1000个，超过1000个的部分将会被忽略；这种情况需要把添加入口链接的工作放到initCrawl回调函数中来做。<br>         contentUrlRegexes  String 数组或正则数组<br>      定义内容页的链接正则，爬虫会根据这些正则来判断一个链接是否是内容页链接。<br>可以使字符串形式的正则，也可以是javaScript的正则，</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//写法一：js原生正则（建议使用这种写法）</span><br><span class="line">[/http:\/\/club2011\.auto\.163\.com\/post\/\d+\.html.*/]</span><br><span class="line">//写法二：正则的字符串形式</span><br><span class="line">[&quot;http://club2011\\.auto\\.163\\.com/post/\\d+\\.html.*&quot;]</span><br><span class="line">//写法三：通过字符串形式new一个js正则对象</span><br><span class="line">[new RegExp(&quot;http://club2011\\.auto\\.163\\.com/post/\\d+\\.html.*&quot;)]</span><br></pre></td></tr></table></figure>
 
 <p>1.正则可以写多个，一个链接只要能匹配到其中的任意一个正则，该链接就会被认为是内容链接<br>2.不设置或设置为空数组，则所有的链接都是内容页链接。<br>helperUrlRegexes String数组或正则数组<br>    定义帮助页的链接正则，爬虫会根据这些正则来判断一个链接是否是帮助页链接。<br>属性同内容页正则属性相同；<br>fields filed对象或数组 不可为空<br>定义爬取结构的数据字段，一个field定义出一个字段。  </p>
@@ -952,7 +956,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-user"></i>
     </span>
-    <span class="site-uv" title="Alle Besucher">
+    <span class="site-uv" title="Total Visitors">
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
     </span>
   
@@ -965,7 +969,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-eye"></i>
     </span>
-    <span class="site-pv" title="Alle Aufrufe">
+    <span class="site-pv" title="Total Views">
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
     </span>
   
