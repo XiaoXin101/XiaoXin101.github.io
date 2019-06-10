@@ -3,12 +3,12 @@
   <entry>
     <title><![CDATA[神箭手云爬虫]]></title>
     <url>%2F2019%2F06%2F06%2Ftest%2F</url>
-    <content type="text"><![CDATA[测试测试]]></content>
+    <content type="text"><![CDATA[文件批量重命名 进入需要重命名的文件夹内，新建一个.txt文件，内容为 dir *.jpg /b&gt;ren.bat(假如你要重命名的是图片的话，只需要将jpg改为其他名称既可。)再改后缀名为.bat双击运行。 用记事本打开ren.bat文件复制文件里面的内容,打开excel，右击单元格A2，选择“选择性粘贴”，选着unicode文本，点击确定。 假设学号在A列，姓名在B列，身份证号在C列等，则在第一条学生信息后的单元格中输入=”ren “ &amp;A2 &amp;”.jpg “ &amp; B2 &amp;”.jpg” 单击该单元格右下角填充按钮，扩充到所有学生，复制此列的内容。 新建一个记事本，粘贴复制的内容，得到的就是文件重命名的Dos命令。 将该文件保存到学生照片文件加下面，将扩展名改为.bat，双击该文件，就会自动将图片重命名为以身份证号命名的图片]]></content>
       <categories>
-        <category>测试</category>
+        <category>工具</category>
       </categories>
       <tags>
-        <tag>test</tag>
+        <tag>file</tag>
       </tags>
   </entry>
   <entry>

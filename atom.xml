@@ -5,9 +5,9 @@
   <subtitle>小鑫的技术专栏</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-06-06T10:26:46.832Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://xiaoxin101.github.io/"/>
+  <updated>2019-06-10T06:01:00.558Z</updated>
+  <id>http://xiaoxin101.github.io/</id>
   
   <author>
     <name>小鑫</name>
@@ -18,33 +18,34 @@
   
   <entry>
     <title>神箭手云爬虫</title>
-    <link href="http://yoursite.com/2019/06/06/test/"/>
-    <id>http://yoursite.com/2019/06/06/test/</id>
+    <link href="http://xiaoxin101.github.io/2019/06/06/test/"/>
+    <id>http://xiaoxin101.github.io/2019/06/06/test/</id>
     <published>2019-06-06T10:23:26.514Z</published>
-    <updated>2019-06-06T10:26:46.832Z</updated>
+    <updated>2019-06-10T06:01:00.558Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="测试测试"><a href="#测试测试" class="headerlink" title="测试测试"></a><strong>测试测试</strong></h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="文件批量重命名"><a href="#文件批量重命名" class="headerlink" title="文件批量重命名"></a><strong>文件批量重命名</strong></h1><ol><li>进入需要重命名的文件夹内，新建一个.txt文件，内容为 dir *.jpg /b&gt;ren.bat(假如你要重命名的是图片的话，只需要将jpg改为其他名称既可。)再改后缀名为.bat双击运行。</li><li>用记事本打开ren.bat文件复制文件里面的内容,打开excel，右击单元格A2，选择“选择性粘贴”，选着unicode文本，点击确定。<ul><li>假设学号在A列，姓名在B列，身份证号在C列等，则在第一条学生信息后的单元格中输入=”ren “ &amp;A2 &amp;”.jpg “ &amp; B2 &amp;”.jpg”</li><li>单击该单元格右下角填充按钮，扩充到所有学生，复制此列的内容。</li><li>新建一个记事本，粘贴复制的内容，得到的就是文件重命名的Dos命令。</li><li>将该文件保存到学生照片文件加下面，将扩展名改为.bat，双击该文件，就会自动将图片重命名为以身份证号命名的图片</li></ul></li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;测试测试&quot;&gt;&lt;a href=&quot;#测试测试&quot; class=&quot;headerlink&quot; title=&quot;测试测试&quot;&gt;&lt;/a&gt;&lt;strong&gt;测试测试&lt;/strong&gt;&lt;/h1&gt;
+        &lt;h1 id=&quot;文件批量重命名&quot;&gt;&lt;a href=&quot;#文件批量重命名&quot; class=&quot;headerlink&quot; title=&quot;文件批量重命名&quot;&gt;&lt;/a&gt;&lt;strong&gt;文件批量重命名&lt;/strong&gt;&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;进入需要重命名的文件夹内，新建一个.txt文件，内容为
       
     
     </summary>
     
-      <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+      <category term="工具" scheme="http://xiaoxin101.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+      <category term="file" scheme="http://xiaoxin101.github.io/tags/file/"/>
     
   </entry>
   
   <entry>
     <title>神箭手云爬虫</title>
-    <link href="http://yoursite.com/2019/06/06/%E7%A5%9E%E7%AE%AD%E6%89%8B%E4%BA%91%E7%88%AC%E8%99%AB/"/>
-    <id>http://yoursite.com/2019/06/06/神箭手云爬虫/</id>
+    <link href="http://xiaoxin101.github.io/2019/06/06/%E7%A5%9E%E7%AE%AD%E6%89%8B%E4%BA%91%E7%88%AC%E8%99%AB/"/>
+    <id>http://xiaoxin101.github.io/2019/06/06/神箭手云爬虫/</id>
     <published>2019-06-06T04:04:18.153Z</published>
     <updated>2019-06-06T09:45:10.576Z</updated>
     
@@ -66,10 +67,10 @@
     
     </summary>
     
-      <category term="神箭手" scheme="http://yoursite.com/categories/%E7%A5%9E%E7%AE%AD%E6%89%8B/"/>
+      <category term="神箭手" scheme="http://xiaoxin101.github.io/categories/%E7%A5%9E%E7%AE%AD%E6%89%8B/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="http://xiaoxin101.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
