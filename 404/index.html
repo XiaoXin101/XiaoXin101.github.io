@@ -166,6 +166,9 @@
 
 
 
+  <script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
+<script type="text/javascript" src="/js/src/custom.js"></script>
+
   <noscript>
   <style>
   .use-motion .motion-element,
@@ -590,7 +593,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -611,7 +614,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -632,7 +637,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -725,7 +732,7 @@
 </div>
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共字</span>
+  <span class="post-count">全站共4.2k字</span>
 </div>
 <!--
 
@@ -759,16 +766,7 @@
   
 
   
-    <span class="post-meta-divider">|</span>
-  
 
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-eye"></i>
-    </span>
-    <span class="site-pv" title="Total Views">
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
   
 </div>
 
@@ -1289,15 +1287,15 @@
     
 
     $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + '')
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'vVpuMC1HFnrLF5bXL984eWRn-gzGzoHsz')
         .done(function({ api_server }) {
           var Counter = function(method, url, data) {
             return $.ajax({
               method: method,
               url: 'https://' + api_server + '/1.1' + url,
               headers: {
-                'X-LC-Id': '',
-                'X-LC-Key': '',
+                'X-LC-Id': 'vVpuMC1HFnrLF5bXL984eWRn-gzGzoHsz',
+                'X-LC-Key': 'M0Q3nnwQdQslWvUN8TOsSr0f',
                 'Content-Type': 'application/json',
               },
               data: data
